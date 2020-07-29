@@ -1,0 +1,23 @@
+{
+    "settings": {
+        "theme": "te",
+        "locale": "de-DE",
+        "canOpen": false,
+        "canOpenDemo": false,
+        "canOpenSettings": false,
+        "canCreate": false,
+        "canImportXml": false,
+        "dropbox": false,
+        "webdav": true,
+        "gdrive": false,
+        "onedrive": false
+    },
+    "files": [
+        {
+            "storage": "webdav",
+            "name": "keeweb.kdbx",
+            "path": "./kdbx/keeweb.kdbx"
+        }
+    ]
+}
+
