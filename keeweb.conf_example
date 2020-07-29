@@ -1,0 +1,16 @@
+<VirtualHost *:443>
+    ServerName example.com
+    DocumentRoot /var/www/keeweb
+    SSLCertificateFile /certs/cert.pem
+    SSLCertificateKeyFile /certs/key.pem
+
+    <Directory "/var/www/keeweb/kdbx">
+        DAV On
+        DirectoryIndex disabled
+        AuthType Basic
+        AuthName "webdav"
+        AuthBasicProvider    file
+        AuthUserFile /var/www/keeweb/htpasswd
+        Require              valid-user
+    </Directory>
+</VirtualHost>
